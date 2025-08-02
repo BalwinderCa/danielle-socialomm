@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mixpost-app
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./:/var/www
+      - ./docker/php/local.ini:/usr/local/etc/php/conf.d/local.ini
+    networks:
+      - mixpost-network
+
+  db:
+    image: mysql:8.0
+    container_name: mixpost-db
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: mixpost_db
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_PASSWORD: root
+      MYSQL_USER: mixpost
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./docker/mysql/data:/var/lib/mysql
+      - ./docker/mysql/my.cnf:/etc/mysql/my.cnf
+    networks:
+      - mixpost-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: mixpost-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    networks:
+      - mixpost-network
+
+  nginx:
+    image: nginx:alpine
+    container_name: mixpost-nginx
+    restart: unless-stopped
+    ports:
+      - "8000:80"
+    volumes:
+      - ./:/var/www
+      - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
+    networks:
+      - mixpost-network
+    depends_on:
+      - app
+
+networks:
+  mixpost-network:
+    driver: bridge 
