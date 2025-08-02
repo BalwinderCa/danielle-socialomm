@@ -1,0 +1,1 @@
+import{g as t}from"./app-DrYJbhZh.js";import{E as a}from"./EllipsisVertical-DX5Zf3Qx.js";import{k as o,y as r,z as s,E as e}from"./@vue-DxEuNGre.js";const l={__name:"DropdownButton",setup(c){return(_,m)=>(o(),r(t,{class:"mt-1"},{default:s(()=>[e(a)]),_:1}))}};export{l as _};

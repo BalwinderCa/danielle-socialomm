@@ -1,0 +1,1 @@
+import{_ as t}from"./emoji-mart-vue-fast-DVezNdb5.js";import{k as o,l as s,J as r}from"./@vue-DxEuNGre.js";const c={},n={class:"text-lg font-medium"};function a(e,l){return o(),s("div",n,[r(e.$slots,"default")])}const f=t(c,[["render",a]]);export{f as S};

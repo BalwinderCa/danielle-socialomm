@@ -1,0 +1,1 @@
+import{E as r,d as n,P as i}from"./emoji-mart-vue-fast-DVezNdb5.js";import{k as m,y as u,u as t}from"./@vue-DxEuNGre.js";const f={__name:"EmojiMart",emits:["select"],setup(c,{emit:l}){const a=new r(n);return(o,e)=>(m(),u(t(i),{data:t(a),"auto-focus":!0,"show-preview":!1,native:!0,onSelect:e[0]||(e[0]=s=>o.$emit("select",s))},null,8,["data"]))}};export{f as default};

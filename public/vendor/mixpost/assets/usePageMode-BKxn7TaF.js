@@ -1,0 +1,1 @@
+import{K as s}from"./@inertiajs-D-tiTHlX.js";import{b as e}from"./@vue-DxEuNGre.js";const a=()=>{const r=e(()=>s().props.mode),t=e(()=>r.value==="create"),o=e(()=>r.value==="edit");return{isCreate:t,isEdit:o}};export{a as u};

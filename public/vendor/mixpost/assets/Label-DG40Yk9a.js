@@ -1,0 +1,1 @@
+import{k as e,l as s,A as o,J as l}from"./@vue-DxEuNGre.js";const n={class:"block font-medium text-gray-700 mb-xs"},c={key:0},r={key:1},m={__name:"Label",props:["value"],setup(t){return(a,_)=>(e(),s("label",n,[t.value?(e(),s("span",c,o(t.value),1)):(e(),s("span",r,[l(a.$slots,"default")]))]))}};export{m as _};

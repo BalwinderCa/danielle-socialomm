@@ -1,0 +1,1 @@
+import{u as s}from"./app-DrYJbhZh.js";import{aJ as i}from"./@vue-DxEuNGre.js";const m=()=>{const{notify:r}=s(),n=i("authPasswordConfirmation");return{onError:(o,t=null)=>{if(o.confirm_password){n().onConfirm(t).show();return}r("error",o)}}};export{m as u};

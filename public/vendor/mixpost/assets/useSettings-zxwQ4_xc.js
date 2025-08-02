@@ -1,0 +1,1 @@
+import{K as o}from"./@inertiajs-D-tiTHlX.js";import{b as r}from"./@vue-DxEuNGre.js";const i=()=>{const t=r(()=>o().props.mixpost.settings);return{getSetting:e=>t.value[e],locale:t.value.locale,timeZone:t.value.timezone,timeFormat:parseInt(t.value.time_format),weekStartsOn:parseInt(t.value.week_starts_on)}};export{i as u};

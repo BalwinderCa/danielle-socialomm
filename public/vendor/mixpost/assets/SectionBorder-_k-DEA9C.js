@@ -1,0 +1,1 @@
+import{k as t,l as a,x as s,t as o}from"./@vue-DxEuNGre.js";const r={class:"hidden sm:block"},c={class:"py-lg"},i={__name:"SectionBorder",props:{contrasted:{type:Boolean,default:!1}},setup(e){return(n,d)=>(t(),a("div",r,[s("div",c,[s("div",{class:o(["border-t",{"border-gray-100":!e.contrasted,"border-gray-200":e.contrasted}])},null,2)])]))}};export{i as _};
